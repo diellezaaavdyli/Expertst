@@ -1572,3 +1572,7 @@ padding: 40px 0;
 }
 }
 
+
+.btn-outline-light:hover{
+  background-color: #33434a;
+}
