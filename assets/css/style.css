@@ -155,11 +155,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 86px;
+  height: 90px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 #header.fixed-top {
-  height: 70px;
+  height: 90px;
 }
 #header .logo {
   font-size: 30px;
@@ -1563,4 +1563,12 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+  #hero h2 {
+   
+    font-size: 12px !important;
 }
+.section{
+padding: 40px 0;
+}
+}
+
