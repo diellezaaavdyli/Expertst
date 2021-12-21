@@ -816,7 +816,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 .services .icon-box .icon i {
-  color: rgb(11 131 124);
+  color: white;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
