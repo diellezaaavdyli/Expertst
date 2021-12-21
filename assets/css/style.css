@@ -475,7 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero {
-    height: 35vh;
+    height: 45vh;
   }
   #hero h1 {
     font-size: 28px;
@@ -492,9 +492,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 span{
     font-size:20px;
   }
-  #hero .container{
+  /* #hero .container{
     padding-top: 15%;
-  }
+  } */
 }
 @media (max-height: 500px) {
   #hero {
@@ -795,16 +795,18 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #e2eefd;
+ 
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background:#000000c4;
+  color: white;
+  height: 100%;
 }
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #f1f6fe;
+  /* background: #f1f6fe; */
   border-radius: 4px;
   border: 1px solid #deebfd;
   display: flex;
@@ -824,8 +826,9 @@ section {
   font-size: 24px;
 }
 .services .icon-box h4 a {
-  color: #222222;
+  color: white;
   transition: ease-in-out 0.3s;
+  pointer-events: none;
 }
 .services .icon-box p {
   line-height: 24px;
@@ -1564,15 +1567,45 @@ section {
     padding: 2px 0;
   }
   #hero h2 {
-   
+    margin: 5px 0 0px 0 !important;
     font-size: 12px !important;
 }
 .section{
-padding: 40px 0;
+padding: 20px 0;
 }
+
 }
 
 
 .btn-outline-light:hover{
-  background-color: #33434a;
+  background-color: rgba(255, 255, 255, 0.219);
+}
+.buttons-banner{
+
+  text-align: center;
+  padding: 3%;
+}
+.service-1{
+  background: url(../img/services/beggystadning.jpg) top left;
+}
+.service-2{
+  background: url(../img/services/flyttstadning.jpg) top left;
+}
+.service-3{
+  background: url(../img/services/Hemstadning.jpg) top left;
+}
+.service-4{
+  background: url(../img/services/fonterputs.jpg) top left;
+}
+.service-5{
+  background: url(../img/services/office-cleaning.jpg) top left;
+
+}
+.service-6{
+  background: url(../img/services/trappstadning.jpg) top left;
+
+}
+.service-7{
+  background: url(../img/services/storstadning.jpg) top left;
+
 }
