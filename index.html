@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <style>
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      display: block;
+    }
+  </style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -1032,39 +1041,45 @@
 
           <div class="col-lg-6">
             <h1>HERE</h1>
-            <form action="#">
-              <div class="dbl-field">
-                <div class="field">
-                  <input type="text" name="name" placeholder="Enter your name">
-
-                </div>
-                <div class="field">
-                  <input type="text" name="email" placeholder="Enter your email">
-
-                </div>
-              </div>
-              <div class="dbl-field">
-                <div class="field">
-                  <input type="text" name="phone" placeholder="Enter your phone">
-
-                </div>
-                <div class="field">
-                  <input type="text" name="website" placeholder="Enter your website">
-
-                </div>
-              </div>
-              <div class="message">
-                <textarea placeholder="Write your message" name="message"></textarea>
-                <i class="material-icons">message</i>
-              </div>
-              <div class="button-area">
-                <button type="submit">Send Message</button>
-                <span></span>
-              </div>
+            <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/xbjwlldk"
+              method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <fieldset id="fs-frm-selects">
+                  <label for="timely">1. The service provided was completed in a timely manner.</label>
+                  <select name="timely" id="timely" required="">
+                    <option value="Choose" selected="" disabled="">Choose</option>
+                    <option value="1">Strongly Agree</option>
+                    <option value="3">Agree</option>
+                    <option value="5">Neutral</option>
+                    <option value="7">Disagree</option>
+                    <option value="9">Strongly Disagree</option>
+                  </select>
+                  <label for="timely">2. The quality of work was high in quality.</label>
+                  <select name="quality" id="quality" required="">
+                    <option value="Choose" selected="" disabled="">Choose</option>
+                    <option value="1">Strongly Agree</option>
+                    <option value="3">Agree</option>
+                    <option value="5">Neutral</option>
+                    <option value="7">Disagree</option>
+                    <option value="9">Strongly Disagree</option>
+                  </select>
+                </fieldset>
+                <label for="message">Additional Comments</label>
+                <textarea rows="3" name="message" id="message"
+                  placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+                  required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+              </fieldset>
+              <input type="submit" value="Send Responses">
             </form>
           </div>
 
         </div>
+
 
       </div>
     </section><!-- End Contact Section -->
