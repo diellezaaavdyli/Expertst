@@ -1609,3 +1609,11 @@ padding: 20px 0;
   background: url(../img/services/storstadning.jpg) top left;
 
 }
+
+textarea.form-control{
+  width: 260% !important
+}
+
+label{
+  line-height: 35px;
+}
