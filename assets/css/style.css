@@ -492,6 +492,13 @@ h1, h2, h3, h4, h5, h6 {
   #hero h1 span{
     font-size:20px;
   }
+  textarea.form-control {
+    width: 180% !important;
+    
+  }
+  .e-post-namn-input{
+    width: 170% !important;
+  }
   /* #hero .container{
     padding-top: 15%;
   } */
@@ -500,6 +507,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     height: 120vh;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1469,7 +1477,7 @@ section {
   background: rgb(11 131 124);
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 20px 0 30px 0;
   background: #fff;
 }
 #footer .footer-top .footer-contact {
@@ -1611,9 +1619,15 @@ padding: 20px 0;
 }
 
 textarea.form-control{
-  width: 260% !important
+  width: 260%;
 }
 
 label{
   line-height: 35px;
+}
+.contact-forma{
+  padding-bottom:5%;
+}
+.e-post-namn-input{
+  width: 255%;
 }
