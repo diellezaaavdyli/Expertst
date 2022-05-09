@@ -1618,9 +1618,7 @@ padding: 20px 0;
 
 }
 
-textarea.form-control{
-  width: 260%;
-}
+
 
 label{
   line-height: 35px;
@@ -1629,5 +1627,6 @@ label{
   padding-bottom:5%;
 }
 .e-post-namn-input{
-  width: 255%;
+  display: grid;
+  width: 100%;
 }
